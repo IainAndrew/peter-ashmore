@@ -1,6 +1,9 @@
 // bower:scss
 // endbower
 
+@import "grid";
+@import "header";
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -9,28 +12,9 @@
 }
 
 body {
-	background:pink;
+	
 }
-.tape-machine-wrap {
-	position:fixed;
-	height:100vh;
-	.tape-machine {
-		position:absolute;
-	}
-	.tm-body {
-		bottom:0.5rem;
-		left:25rem;
-	}
-	.tm-reel-left {
-		bottom:10.8rem;
-		left:25.5rem;
-	}
-	.tm-reel-right {
-		bottom:10.8rem;
-		left:36.5rem;
-	}
-}
-.hello {
-	height:900rem;
-	background:white;
+
+html {
+	font-size:16px;
 }
