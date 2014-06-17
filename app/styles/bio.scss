@@ -3,6 +3,8 @@ section.bio {
 	.clearfix {
 		&:first-child {
 			padding:2rem;
+			width:70%;
+			margin:0 auto;
 		}
 		&:nth-child(3) {
 			padding:2rem;
