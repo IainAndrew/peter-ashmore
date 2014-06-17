@@ -53,5 +53,28 @@ header {
 			left:8.5rem;
 			top:1.3rem;
 		}
+		.tm-tape-left {
+			height:6rem;
+			width:6rem;
+			border-radius:50%;
+			background:#0A151A;
+			top:1.5rem;
+			left:1.5rem;
+		}
+		.tm-tape-right {
+			height:3.5rem;
+			width:3.5rem;
+			border-radius:50%;
+			background:#0A151A;
+			top:3.1rem;
+			right:2.2rem;
+		}
+		.tm-meters {
+			background:grey;
+			height:2rem;
+			width:5rem;
+			bottom:2rem;
+			left:4rem;
+		}
 	}
 }
