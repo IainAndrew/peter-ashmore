@@ -1,4 +1,13 @@
 section.bio {
+	font-family:'mtt_milanoregular';
+	.clearfix {
+		&:first-child {
+			padding:2rem;
+		}
+		&:nth-child(3) {
+			padding:2rem;
+		}
+ 	}
 	.block-orphan-img {
 		height:20rem;
 		background:url(../../images/orphan-studios.jpg);

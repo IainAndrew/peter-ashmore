@@ -1,11 +1,20 @@
 header {
-	height:100vh;
-	background:#56a9d8;
+	padding-top:2rem;
+	//height:100vh;
+	//background:#56a9d8;
+	.header-bg {
+		background:#56a9d8;
+		height:26rem;
+		position:absolute;
+		width:100%;
+		top:0;
+		z-index:-1;
+	}
 	.header-text {
 		width:100%;
 		//margin:1rem auto;
 		//border:solid;
-		font-family:helvetica;
+		font-family:Helvetica;
 		text-transform:uppercase;
 		color:white;
 		text-align:center;
@@ -35,7 +44,7 @@ header {
 		height:16rem;
 		width:16rem;
 		//border:solid;
-		margin:3rem auto;
+		margin:7rem auto 2rem auto;
 		.tape-machine {
 			position:absolute;
 		}
