@@ -1,25 +1,18 @@
 'use strict';
 
-
-var sdegree = 0;
-
-$(window).scroll(function(event){
+$(window).scroll(function(){
 	var st = $(this).scrollTop(),
-		rotate = "rotate(" + st + "deg)";
+		rotate = 'rotate(' + st + 'deg)';
 
 	$('.tm-reel-left').css({transform : rotate});
 	$('.tm-reel-right').css({transform : rotate});
 	$('.tm-meters').css({
-    	background: '#F7F374'
-    });
-
-	$(window).scroll(function() {
-	    clearTimeout($.data(this, 'scrollTimer'));
-	    $.data(this, 'scrollTimer', setTimeout(function() {
-	        $('.tm-meters').css({
-	        	background: 'grey'
-	        });
-	    }, 200));
+		background: '#F7F374'
 	});
-
+	clearTimeout($.data(this, 'scrollTimer'));
+	$.data(this, 'scrollTimer', setTimeout(function() {
+		$('.tm-meters').css({
+			background: 'grey'
+		});
+	}, 200));
 });

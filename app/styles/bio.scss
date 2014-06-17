@@ -1,12 +1,14 @@
-.block-orphan-img {
-	min-height:20rem;
-	background:url(../../images/orphan-studios.jpg);
-	background-size:cover;
-	background-position:center;
-}
-.block-ghost-img {
-	min-height:20rem;
-	background:url(../../images/ghost-studios.jpg);
-	background-size:cover;
-	background-position:center;
+section.bio {
+	.block-orphan-img {
+		height:20rem;
+		background:url(../../images/orphan-studios.jpg);
+		background-size:cover;
+		background-position:center;
+	}
+	.block-ghost-img {
+		height:20rem;
+		background:url(../../images/ghost-studios.jpg);
+		background-size:cover;
+		background-position:center;
+	}
 }
