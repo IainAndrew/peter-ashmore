@@ -25,3 +25,18 @@ a {
 	text-decoration:none;
 	color:inherit;
 }
+.v-align:after {
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: '';
+}
+.v-align > .v-aligned {
+    display: inline-block;
+    vertical-align: middle;
+    //text-align: left;
+}
+.text-center {
+	text-align:center;
+}

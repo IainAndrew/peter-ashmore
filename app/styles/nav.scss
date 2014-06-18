@@ -54,5 +54,12 @@ nav {
 				}
 			}
 		}
+		a#nav-toggle {
+			&:hover {
+				i {
+					color:white - 10;
+				}
+			}
+		}
 	}
 }
