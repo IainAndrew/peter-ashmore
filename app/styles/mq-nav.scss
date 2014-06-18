@@ -1,10 +1,32 @@
 @media screen and (min-width:30rem) {
 	nav {
+		background:none;
 		width:auto;
 		ul {
 			a {
 				li {
-
+					box-shadow:2px 2px 0 0 #56a9d8;
+					span {
+						display:none;
+					}
+				}
+			}
+		}
+		a#nav-toggle {
+			display:none;
+		}
+	}
+}
+@media screen and (max-width: 30rem) {
+	nav {
+		width:100%;
+		ul {
+			display:none;
+			a {
+				li {
+					width:100%;
+					margin:0;
+					border-bottom:1px solid lightgrey;
 				}
 			}
 		}

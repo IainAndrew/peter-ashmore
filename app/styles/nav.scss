@@ -3,21 +3,25 @@ nav {
 	top:0;
 	left:0;
 	z-index:100;
-	width:100%;
+	//width:100%;
+	//width:6rem;
+	text-align:center;
+	background:rgba(0,0,0,0.2);
 	ul {
 		padding:0;
 		margin:0;
-		display:none;
+		//display:none;
 		height:auto;
 		a {
 			text-decoration: none;
-			color:rgba(255, 255, 255, 0.8);
+			color:#56a9d8;
 			font-size:2em;
+			font-family:'mtt_milanoregular';
 			transition:color 0.2s;
 			li {
 				list-style-type:none;
 				//border:1px solid white;
-				background:rgba(255, 255, 255, 0.2);
+				background:rgba(255, 255, 255, 0.9);
 				width:5rem;
 				height:5rem;
 				text-align:center;
@@ -30,7 +34,11 @@ nav {
 		}
 	}
 	a#nav-toggle {
-		height:2rem;
+		float:left;
+		i {
+			font-size:2.5em;
+			color:white;
+		}
 	}
 }
 .no-touch {
@@ -38,10 +46,10 @@ nav {
 		ul {
 			a {
 				&:hover {
-					color:white;
+					color:#56a9d8 - 30;
 					li {
 						transform:scale(1.1);
-						background:rgba(255, 255, 255, 0.3);
+						background:rgba(255, 255, 255, 1);
 					}
 				}
 			}
