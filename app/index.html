@@ -101,6 +101,9 @@
                 </div>
             </div>
         </section>
+        <section class="samples">
+            <div id="toneden"></div>
+        </section>
 
 
         <!-- build:js scripts/vendor.js -->
@@ -112,6 +115,30 @@
 
         <script type="text/javascript">
             var s = skrollr.init();
+        </script>
+        <script>
+            (function() {
+                var script = document.createElement("script");
+                
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "//sd.toneden.io/production/toneden.loader.js"
+                
+                var entry = document.getElementsByTagName("script")[0];
+                entry.parentNode.insertBefore(script, entry);
+            }());
+            
+            ToneDenReady = window.ToneDenReady || [];
+            ToneDenReady.push(function() {
+                // Modify the dom and urls parameters to position
+                // your player and select tracks/sets/artists to play.
+                ToneDen.player.create({
+                    dom: "#toneden",
+                    urls: [
+                        "https://soundcloud.com/peterashmore"
+                    ]
+                });
+            });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

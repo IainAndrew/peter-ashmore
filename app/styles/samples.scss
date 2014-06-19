@@ -1,0 +1,11 @@
+section.samples {
+	#toneden {
+		.tdrow.social, .header, .artist-name, .info {
+			display:none;
+		}
+		.playlist {
+			max-height:none;
+			overflow-y:auto;
+		}
+	}
+}
