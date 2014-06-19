@@ -1,17 +1,7 @@
 section.bio {
 	font-family:'mtt_milanoregular';
-	.clearfix {
-		&:first-child {
-			padding:4rem 2rem 4rem 2rem;
-			width:100%;
-			margin:0 auto;
-		}
-		&:nth-child(3) {
-			padding:4rem 2rem 4rem 2rem;
-		}
- 	}
 	.block-orphan-img {
-		height:20rem;
+		//height:30rem;
 		background:url(../../images/orphan-studios.jpg);
 		background-size:cover;
 		background-position:center;
@@ -19,16 +9,21 @@ section.bio {
 			height:100%;
 			background:rgba(0,0,0,0.7);
 			color:white;
-			opacity:0;
+			opacity:1;
 			transition:opacity 0.2s;
+			padding:5rem 1rem 5rem 1rem;
+			p {
+				font-size:1.3em;
+			}
 			h3 {
 				margin:0;
 				text-transform:uppercase;
 			}
+
 		}
 	}
 	.block-ghost-img {
-		height:20rem;
+		//height:20rem;
 		background:url(../../images/ghost-studios.jpg);
 		background-size:cover;
 		background-position:center;
@@ -36,8 +31,12 @@ section.bio {
 			height:100%;
 			background:rgba(0,0,0,0.7);
 			color:white;
-			opacity:0;
+			opacity:1;
 			transition:opacity 0.2s;
+			padding:5rem 1rem 5rem 1rem;
+			p {
+				font-size:1.3em;
+			}
 			h3 {
 				margin:0;
 				text-transform:uppercase;
@@ -46,7 +45,7 @@ section.bio {
 	}
 }
 
-.no-touch {
+/*.no-touch {
 	section.bio {
 		.block-orphan-img, .block-ghost-img {
 			&:hover {
@@ -56,4 +55,4 @@ section.bio {
 			}
 		}
 	}
-}
+}*/

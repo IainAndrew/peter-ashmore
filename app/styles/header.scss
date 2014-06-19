@@ -14,7 +14,7 @@ header {
 		width:100%;
 		//margin:1rem auto;
 		//border:solid;
-		font-family:Helvetica;
+		font-family:'ars_maquette_problack';
 		text-transform:uppercase;
 		color:white;
 		text-align:center;
@@ -22,17 +22,19 @@ header {
 		h1 {
 			margin-top:0;
 			margin-bottom:-0.3em;
+			font-weight:normal;
 		}
 		.column.full {
 			&:first-child {
 				font-size:2em;
 			}
 			&:nth-child(2) {
-				font-size:1.3em;
-				margin-bottom:0.1em;
+				font-size:1.27em;
+				margin-bottom:0.3em;
 			}
 			&:nth-child(3) {
 				font-size:0.76em;
+				font-family:'mtt_milanobold';
 				color:#306177;
 			}
 		}

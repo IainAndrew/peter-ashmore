@@ -13,3 +13,27 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'ars_maquette_problack';
+    src: url('fonts/arsmaquettepro-black-webfont.eot');
+    src: url('fonts/arsmaquettepro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arsmaquettepro-black-webfont.woff') format('woff'),
+         url('fonts/arsmaquettepro-black-webfont.ttf') format('truetype'),
+         url('fonts/arsmaquettepro-black-webfont.svg#ars_maquette_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mtt_milanobold';
+    src: url('fonts/mttmilano-bold-webfont.eot');
+    src: url('fonts/mttmilano-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mttmilano-bold-webfont.woff') format('woff'),
+         url('fonts/mttmilano-bold-webfont.ttf') format('truetype'),
+         url('fonts/mttmilano-bold-webfont.svg#mtt_milanobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
