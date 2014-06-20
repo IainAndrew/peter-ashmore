@@ -6,13 +6,22 @@ section.samples {
 		.track-info-name {
 			font-size:1.5em;
 			font-family:'mtt_milanoregular';
+			&:hover {
+				color:#405180;
+			}
 		}
 		.playlist {
 			max-height:none;
 			overflow-y:auto;
+			.playing {
+				color:#405180;
+			}
 		}
 		.cover {
 			height:3rem;
+		}
+		.button-controls {
+			color:#405180;
 		}
 	}
 }
