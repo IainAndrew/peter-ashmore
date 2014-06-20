@@ -2,14 +2,17 @@
 
 $(window).scroll(function(){
 	var st = $(this).scrollTop(),
-		rotate = 'rotate(' + st + 'deg)';
+		rotate = 'rotate(' + st + 'deg)',
+		$leftReel = $('.tm-reel-left'),
+		$rightReel = $('.tm-reel-right'),
+		$meters = $('.tm-meters');
 
-	$('.tm-reel-left').css({transform : rotate});
-	$('.tm-reel-right').css({transform : rotate});
-	$('.tm-meters').addClass('tm-meters-light');
+	$leftReel.css({transform : rotate});
+	$rightReel.css({transform : rotate});
+	$meters.addClass('tm-meters-light');
 	clearTimeout($.data(this, 'scrollTimer'));
 	$.data(this, 'scrollTimer', setTimeout(function() {
-		$('.tm-meters').removeClass('tm-meters-light');
+		$meters.removeClass('tm-meters-light');
 	}, 200));
 });
 

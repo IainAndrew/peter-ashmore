@@ -1,0 +1,22 @@
+.v-align:after {
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+    content: '';
+}
+.v-align > .v-aligned {
+    display: inline-block;
+    vertical-align: middle;
+    //text-align: left;
+}
+.text-center {
+	text-align:center;
+}
+.label {
+	width:100%;
+	background:#56a9d8;
+	color:white;
+	text-transform:uppercase;
+	text-align:center;
+}
