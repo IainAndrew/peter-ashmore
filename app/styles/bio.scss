@@ -1,5 +1,18 @@
 section.bio {
 	font-family:'mtt_milanoregular';
+	.bio-intro {
+		padding:5rem 2rem 5rem 2rem;
+		p {
+			font-size:1.2em;
+			color:#405180;
+			margin:2rem auto;
+		}
+		hr {
+			color:#405180;
+			width:50%;
+			border:1px solid lightgrey;
+		}
+	}
 	.block-orphan-img {
 		//height:30rem;
 		background:url(../../images/orphan-studios.jpg);

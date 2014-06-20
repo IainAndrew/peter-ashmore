@@ -1,11 +1,18 @@
 section.samples {
 	#toneden {
-		.tdrow.social, .header, .artist-name, .info {
+		.tdrow.social, .cover-img, .artist-name, .info {
 			display:none;
+		}
+		.track-info-name {
+			font-size:1.5em;
+			font-family:'mtt_milanoregular';
 		}
 		.playlist {
 			max-height:none;
 			overflow-y:auto;
+		}
+		.cover {
+			height:3rem;
 		}
 	}
 }
