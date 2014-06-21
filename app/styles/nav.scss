@@ -18,6 +18,7 @@ nav {
 			font-size:2em;
 			font-family:'mtt_milanoregular';
 			transition:color 0.2s;
+
 			li {
 				list-style-type:none;
 				//border:1px solid white;
@@ -31,6 +32,10 @@ nav {
 				margin:0.5rem;
 				transition:transform 0.2s, background 0.2s;
 				position:relative;
+				&:active {
+					transform:scale(1.1);
+					background:rgba(255, 255, 255, 1);
+				}
 			}
 		}
 	}
@@ -51,6 +56,10 @@ nav {
 					li {
 						transform:scale(1.1);
 						background:rgba(255, 255, 255, 1);
+						&:active {
+							transform:scale(1);
+							background:rgba(255, 255, 255, 1);
+						}
 					}
 				}
 			}
