@@ -17,37 +17,43 @@ $(window).scroll(function(){
 });
 
 $(function() {
-	var toggle = $('#nav-toggle'),
-		menu = $('nav ul'),
-		icon = $('#nav-toggle i');
+	var $toggle = $('#nav-toggle'),
+		$menu = $('nav ul'),
+		$icon = $('#nav-toggle i'),
+		$menuItem = $('nav ul a');
 		
-	toggle.click(function(e) {
+	$toggle.click(function(e) {
 		e.preventDefault();
-		menu.slideToggle();
-		icon.addClass('spin-02s');
+		$menu.slideToggle();
+		$icon.addClass('spin-02s');
 		setTimeout(function() { 
-		    icon.removeClass('spin-02s');
+			$icon.removeClass('spin-02s');
 		}, 200);
 
-		if (icon.hasClass('icon-menu')) {
-			icon.removeClass('icon-menu').addClass('icon-cancel');
-		} else if (icon.hasClass('icon-cancel')) {
-			icon.removeClass('icon-cancel').addClass('icon-menu');
+		if ($icon.hasClass('icon-menu')) {
+			$icon.removeClass('icon-menu').addClass('icon-cancel');
+		} else if ($icon.hasClass('icon-cancel')) {
+			$icon.removeClass('icon-cancel').addClass('icon-menu');
 		}
 	});
 
-
 	$(window).resize(function() {
-		var width = $(window).width();
-		if (width > 320 && menu.is(':hidden')) {
-			menu.removeAttr('style');
+		var $width = $(window).width();
+		if ($width > 320 && $menu.is(':hidden')) {
+			$menu.removeAttr('style');
+		}
+		if ( $width < 480 ) {
+			$menuItem.click(function() {
+				$menu.slideToggle();
+				$icon.removeClass('icon-cancel').addClass('icon-menu');
+			});
 		}
 	});
 });
 
 $('a:not(nav > a)').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 1000);
-    return false;
+	$('html, body').animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 1000);
+	return false;
 });

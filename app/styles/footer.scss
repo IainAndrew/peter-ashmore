@@ -1,0 +1,16 @@
+footer {
+	.clearfix {
+		background:url(../../images/faders.jpg);
+		background-position:center;
+		background-size:cover;
+		.column.full {
+			height:100%;
+			background:rgba(0,0,0,0.6);
+			padding:3rem 1rem 3rem 1rem;
+			p {
+				color:white;
+				margin:0;
+			}
+		}
+	}
+}
