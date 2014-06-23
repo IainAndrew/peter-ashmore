@@ -12,6 +12,9 @@ section.bio {
 			border:1px solid lightgrey;
 		}
 	}
+	.bio-text {
+		padding:5rem 2rem 5rem 2rem;
+	}
 	.block-orphan-img {
 		//height:30rem;
 		background:url(../../images/orphan-studios.jpg);
@@ -19,7 +22,7 @@ section.bio {
 		background-position:center;
 		.column.full {
 			height:100%;
-			background:rgba(0,0,0,0.7);
+			background:rgba(0,0,0,0.5);
 			color:white;
 			opacity:1;
 			transition:opacity 0.2s;
@@ -41,7 +44,7 @@ section.bio {
 		background-position:center;
 		.column.full {
 			height:100%;
-			background:rgba(0,0,0,0.7);
+			background:rgba(0,0,0,0.5);
 			color:white;
 			opacity:1;
 			transition:opacity 0.2s;

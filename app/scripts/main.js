@@ -21,6 +21,7 @@ $(function() {
 		$menu = $('nav ul'),
 		$icon = $('#nav-toggle i'),
 		$menuItem = $('nav ul a');
+		var $width = $(window).width();
 		
 	$toggle.click(function(e) {
 		e.preventDefault();
@@ -36,18 +37,18 @@ $(function() {
 			$icon.removeClass('icon-cancel').addClass('icon-menu');
 		}
 	});
+	if ( $width < 480 ) {
+		$menuItem.click(function() {
+			$menu.slideToggle();
+			$icon.removeClass('icon-cancel').addClass('icon-menu');
+		});
+	}
 
 	$(window).resize(function() {
-		var $width = $(window).width();
 		if ($width > 320 && $menu.is(':hidden')) {
 			$menu.removeAttr('style');
 		}
-		if ( $width < 480 ) {
-			$menuItem.click(function() {
-				$menu.slideToggle();
-				$icon.removeClass('icon-cancel').addClass('icon-menu');
-			});
-		}
+
 	});
 });
 
