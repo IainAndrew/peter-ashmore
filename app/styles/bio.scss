@@ -82,7 +82,7 @@ section.bio {
 		background-position:center;
 		.column.full {
 			height:100%;
-			background:rgba(0,0,0,0.5);
+			background:rgba(0,0,0,0.6);
 			color:white;
 			opacity:1;
 			transition:opacity 0.2s;
@@ -90,11 +90,6 @@ section.bio {
 			p {
 				font-size:1.3em;
 			}
-			h3 {
-				margin:0;
-				text-transform:uppercase;
-			}
-
 		}
 	}
 	.block-ghost-img {
@@ -112,22 +107,6 @@ section.bio {
 			p {
 				font-size:1.3em;
 			}
-			h3 {
-				margin:0;
-				text-transform:uppercase;
-			}
 		}
 	}
 }
-
-/*.no-touch {
-	section.bio {
-		.block-orphan-img, .block-ghost-img {
-			&:hover {
-				.column.full {
-					opacity:1;
-				}
-			}
-		}
-	}
-}*/

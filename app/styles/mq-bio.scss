@@ -6,3 +6,44 @@
 		}
 	}
 }
+@media screen and (min-width:40rem) {
+	section.bio {
+		.bio-intro {
+			padding-top:10rem;
+			padding-left:3rem;
+			padding-right:3rem;
+			font-size:1.3em;
+			p {
+				text-align:left;
+			}
+		}
+		.bio-text {
+			padding-top:5rem;
+			padding-bottom:5rem;
+		}
+	}
+}
+@media screen and (min-width:56rem) {
+	section.bio {
+		.bio-intro {
+			width:70%;
+			margin:0 auto;
+		}
+		.block-orphan-img, .block-ghost-img {
+			.column.full {
+				padding-top:7rem;
+				padding-bottom:7rem;
+			}
+		}
+		.bio-text {
+			width:60%;
+		}
+	}
+}
+@media screen and (min-width:70rem) {
+	section.bio {
+		.bio-text {
+			width:50%;
+		}
+	}
+}

@@ -3,9 +3,6 @@
 		.header-text {
 			font-size:1.2em;
 		}
-		.header-bg {
-			height:28rem;
-		}
 	}
 }
 @media screen and (min-width:33rem) {
@@ -13,28 +10,17 @@
 		.header-text {
 			font-size:1.4em;
 		}
-		.header-bg {
-			height:30rem;
-		}
 	}
 }
 @media screen and (min-width:40rem) {
 	header {
 		.header-text {
 			font-size:1.7em;
+			padding-bottom:11rem;
 		}
-		.header-bg {
-			height:32rem;
-		}
-	}
-}
-@media screen and (min-width:60rem) {
-	header {
-		.header-text {
-			font-size:2em;
-		}
-		.header-bg {
-			height:35rem;
+		.header-photo {
+			width:12rem;
+			height:12rem;
 		}
 	}
 }

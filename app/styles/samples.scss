@@ -1,5 +1,7 @@
 section.samples {
 	#toneden {
+		padding-top:4rem;
+		padding-bottom:4rem;
 		.tdrow.social, .cover-img, .artist-name, .info {
 			display:none;
 		}
@@ -22,6 +24,9 @@ section.samples {
 		}
 		.player {
 			max-width:48rem;
+		}
+		.controls {
+			border:0;
 		}
 	}
 }

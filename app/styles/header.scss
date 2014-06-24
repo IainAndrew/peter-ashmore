@@ -29,10 +29,16 @@ header {
 		.column.full {
 			&:first-child {
 				font-size:2.1em;
+				text-shadow:  
+		  0 -1px 0px rgba(grey, 0.6),
+		  0 -2px 0px rgba(grey, 0.8);
 			}
 			&:nth-child(2) {
 				font-size:1.37em;
 				margin-bottom:0.3em;
+				text-shadow:  
+		  0 -1px 0px rgba(grey, 0.6),
+		  0 -2px 0px rgba(grey, 0.8);
 			}
 			&:nth-child(3) {
 				font-size:0.83em;
@@ -48,11 +54,11 @@ header {
 		width:10rem;
 		height:10rem;
 		position:absolute;
-		bottom:-5rem;
+		//bottom:-5rem;
 		left:50%;
-		-ms-transform: translateX(-50%); /* IE 9 */
-	   	-webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
-	    transform: translateX(-50%);
+		-ms-transform: translate(-50%, -50%); /* IE 9 */
+	   	-webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+	    transform: translate(-50%, -50%);
 		border-radius:50%;
 		border:1rem solid white;
 		//box-shadow: inset 0 2px 2px rgba(0,0,0,0.6);
