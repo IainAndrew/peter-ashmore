@@ -1,19 +1,79 @@
 section.bio {
 	font-family:'mtt_milanoregular';
 	.bio-intro {
-		padding:5rem 2rem 5rem 2rem;
+		padding:5rem 2rem 4rem 2rem;
 		p {
 			font-size:1.2em;
 			color:#405180;
-			margin:2rem auto;
+			margin:4rem auto;
+			text-align:center;
 		}
 		hr {
 			width:50%;
 			border:1px solid lightgrey;
 		}
 	}
+	hr.section-hr {
+		border:1px solid #FF775C;
+		width:50%;
+	}
+	.tape-machine-wrap {
+		position:relative;
+		//bottom:0;
+		//left:50%;
+		//margin-left:-8rem;
+		height:16rem;
+		width:16rem;
+		//border:solid;
+		margin:0 auto;
+		.tape-machine {
+			position:absolute;
+		}
+		.tm-body {
+			bottom:0.5rem;
+			left:50%;
+			margin-left:-7.5rem;
+			width:15rem;
+		}
+		.tm-reel-left {
+			left:0.8rem;
+			top:0.8rem;
+		}
+		.tm-reel-right {
+			left:8.5rem;
+			top:1.3rem;
+		}
+		.tm-tape-left {
+			height:6rem;
+			width:6rem;
+			border-radius:50%;
+			background:#0A151A;
+			top:1.5rem;
+			left:1.5rem;
+		}
+		.tm-tape-right {
+			height:3.5rem;
+			width:3.5rem;
+			border-radius:50%;
+			background:#0A151A;
+			top:3.1rem;
+			right:2.2rem;
+		}
+		.tm-meters {
+			background:grey;
+			height:2rem;
+			width:5rem;
+			bottom:2rem;
+			left:4rem;
+			transition:background 0.4s;
+		}
+		.tm-meters-light {
+			background:#F7F374;
+		}
+	}
 	.bio-text {
-		padding:5rem 2rem 5rem 2rem;
+		padding:3rem 2rem 3rem 2rem;
+		font-size:1.1em;
 	}
 	.block-orphan-img {
 		//height:30rem;
