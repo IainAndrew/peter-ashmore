@@ -149,6 +149,7 @@ section.contact {
 						height:100%;
 						//padding:3em;
 						//display:none;
+						transition:all 0.3s;
 						.stats {
 							position:relative;
 							top:50%;
@@ -159,6 +160,9 @@ section.contact {
 									margin-bottom:0.5rem;
 								}
 							}
+						}
+						&.instafeed-overlay-slideup {
+							top:0;
 						}
 					}
 				}

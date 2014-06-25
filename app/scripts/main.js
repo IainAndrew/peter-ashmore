@@ -61,6 +61,11 @@ $('a:not(nav > a)').click(function(){
 
 $(function() {
 
-	
-	
+		var $img = $('#instafeed .instafeed-img');
+
+		$img.hover(function() {
+			console.log('hi');
+			//$overlay.toggleClass('instafeed-overlay-slideup');
+		});
+		
 });
