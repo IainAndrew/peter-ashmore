@@ -58,3 +58,9 @@ $('a:not(nav > a)').click(function(){
 	}, 1000);
 	return false;
 });
+
+$(function() {
+
+	
+	
+});

@@ -1,7 +1,46 @@
+@media screen and (min-width: 30rem) {
+	section.contact {
+		.instafeed {
+			.column {
+				.instafeed-img {
+					&:first-child {
+						width:33.3%;
+					}
+					&:nth-child(2) {
+						width:33.3%;
+					}
+					&:nth-child(3) {
+						width:33.3%;
+					}
+					&:nth-child(4) {
+						width:50%;
+					}
+					&:nth-child(5) {
+						display:inline-block;
+						width:50%;
+					}
+				}
+			}
+		}
+	}
+}
 @media screen and (min-width: 40rem) {
 	section.contact {
 		.contact-form {
 			width:90%;
+		}
+	}
+}
+@media screen and (min-width: 48rem) {
+	section.contact {
+		.instafeed {
+			.column {
+				#instafeed {
+					.instafeed-img {
+						width:20%;
+					}
+				}
+			}
 		}
 	}
 }
