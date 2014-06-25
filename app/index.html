@@ -175,20 +175,27 @@
             </div>
             <div class="clearfix contact-form">
 
-                <form action="">
+                <form class="form" method="post" action="connect.php">
                     <div class="column half">
                         <div class="column full">
-                            <input type="text" value="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
                         </div>
                         <div class="column full">
-                            <input type="text" value="email">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="john@doe.com" required>
                         </div>
                         <div class="column full">
-                            <input type="text" value="phone">
+                            <label for="phone">Phone (optional):</label>
+                            <input type="text" id="phone" name="phone" placeholder="0871234567">
                         </div>
                     </div>
                     <div class="column half">
-                        <textarea name="" value="message">message</textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="contact-form-submit-wrap">
+                        <input class="contact-form-submit" type="submit" value="Submit" />
                     </div>
                 </form>
 
