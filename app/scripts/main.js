@@ -59,13 +59,13 @@ $('a:not(nav > a)').click(function(){
 	return false;
 });
 
-$(function() {
+/*$(function() {
 
-		var $img = $('#instafeed .instafeed-img');
+		var $img = $('#instafeed a');
 
 		$img.hover(function() {
 			console.log('hi');
 			//$overlay.toggleClass('instafeed-overlay-slideup');
 		});
 		
-});
+});*/
