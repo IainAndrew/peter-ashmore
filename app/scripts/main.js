@@ -1,8 +1,14 @@
 'use strict';
 
+
+$(window).load(function() {
+	$('body').removeClass('loading'); // Hide loading animation on page load
+});
+
+// Tape machine scroll effect
 $(window).scroll(function(){
-	var st = $(this).scrollTop(),
-		rotate = 'rotate(' + st + 'deg)',
+	var $st = $(this).scrollTop(),
+		rotate = 'rotate(' + $st + 'deg)',
 		$leftReel = $('.tm-reel-left'),
 		$rightReel = $('.tm-reel-right'),
 		$meters = $('.tm-meters');
@@ -16,6 +22,7 @@ $(window).scroll(function(){
 	}, 200));
 });
 
+// Navbar functionality
 $(function() {
 	var $toggle = $('#nav-toggle'),
 		$menu = $('nav ul'),
@@ -39,7 +46,7 @@ $(function() {
 	});
 	if ( $width < 480 ) {
 		$menuItem.click(function() {
-			$menu.slideToggle();
+			$menu.slideToggle(); // slide up when item is clicked on mobile
 			$icon.removeClass('icon-cancel').addClass('icon-menu');
 		});
 	}
@@ -52,9 +59,22 @@ $(function() {
 	});
 });
 
+// Anchor smooth scrolling
 $('a:not(nav > a)').click(function(){
 	$('html, body').animate({
 		scrollTop: $( $.attr(this, 'href') ).offset().top
 	}, 1000);
 	return false;
+});
+
+$(document).ready(function() {
+
+	$(function() {
+
+		var $peter = $('header .header-text .column.full').first(),
+			$ashmore = $peter.next(),
+			$audio = $ashmore.next(),
+			$photo = $('header .header-photo');
+	});
+
 });
