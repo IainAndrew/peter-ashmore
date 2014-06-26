@@ -58,14 +58,3 @@ $('a:not(nav > a)').click(function(){
 	}, 1000);
 	return false;
 });
-
-/*$(function() {
-
-		var $img = $('#instafeed a');
-
-		$img.hover(function() {
-			console.log('hi');
-			//$overlay.toggleClass('instafeed-overlay-slideup');
-		});
-		
-});*/

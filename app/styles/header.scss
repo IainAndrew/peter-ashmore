@@ -62,5 +62,18 @@ header {
 		border-radius:50%;
 		border:1rem solid white;
 		//box-shadow: 0 -2px 2px rgba(0,0,0,0.6);
+		transition: all 0.1s;
+	}
+}
+
+.no-touch {
+	header {
+		.header-photo {
+			&:hover {
+				width:11rem;
+				height:11rem;
+				box-shadow: 0 -5px 5px rgba(0,0,0,0.2);
+			}
+		}
 	}
 }

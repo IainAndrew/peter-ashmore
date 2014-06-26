@@ -1,16 +1,15 @@
 footer {
 	.clearfix {
-		background:url(../../images/faders.jpg);
-		background-position:center;
-		background-size:cover;
+		background:white;
 		.column.full {
-			height:100%;
-			background:rgba(0,0,0,0.6);
-			padding:7rem 1rem 7rem 1rem;
+			padding:3rem 1rem 3rem 1rem;
 			p {
-				color:white;
+				color:#405180;
 				margin:0;
 				font-family:'mtt_milanoregular';
+				&:nth-child(2) {
+					float:right;
+				}
 			}
 		}
 	}

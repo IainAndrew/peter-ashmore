@@ -23,4 +23,15 @@
 			height:12rem;
 		}
 	}
+	.no-touch {
+		header {
+			.header-photo {
+				&:hover {
+					width:13rem;
+					height:13rem;
+					box-shadow: 0 -5px 5px rgba(0,0,0,0.2);
+				}
+			}
+		}
+	}
 }

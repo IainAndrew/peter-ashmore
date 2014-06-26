@@ -17,6 +17,9 @@
 				text-align:left;
 			}
 		}
+		hr.section-hr {
+			width:30%;
+		}
 		.bio-text {
 			padding-top:5rem;
 			padding-bottom:5rem;
@@ -44,6 +47,9 @@
 	section.bio {
 		.bio-text {
 			width:50%;
+		}
+		hr.section-hr {
+			width:20%;
 		}
 	}
 }

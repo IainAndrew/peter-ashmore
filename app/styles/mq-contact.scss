@@ -56,6 +56,24 @@
 		.contact-form {
 			width:50%;
 		}
+		.instafeed {
+			.column {
+				#instafeed {
+					.instafeed-img {
+						width:12.5%;
+						&:nth-child(6) {
+							display:inline-block;
+						}
+						&:nth-child(7) {
+							display:inline-block;
+						}
+						&:nth-child(8) {
+							display:inline-block;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
