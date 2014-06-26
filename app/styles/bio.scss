@@ -7,18 +7,15 @@ section.bio {
 			color:#405180;
 			margin:4rem auto;
 			text-align:center;
-			border:2px solid lightgrey;
-			border-radius:0.5rem;
+			//border:2px solid lightgrey;
+			border-radius:0.2rem;
 			padding:2rem;
+			box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2);
 		}
 		hr {
 			width:50%;
 			border:1px solid lightgrey;
 		}
-	}
-	hr.section-hr {
-		border:1px solid #FF775C;
-		width:50%;
 	}
 	.tape-machine-wrap {
 		position:relative;
@@ -51,7 +48,7 @@ section.bio {
 			width:6rem;
 			border-radius:50%;
 			background:#0A151A;
-			top:1.5rem;
+			top:1.55rem;
 			left:1.5rem;
 		}
 		.tm-tape-right {
@@ -83,6 +80,7 @@ section.bio {
 		background:url(../../images/orphan-studios.jpg);
 		background-size:cover;
 		background-position:center;
+		background-attachment:fixed;
 		.column.full {
 			height:100%;
 			background:rgba(0,0,0,0.6);
@@ -100,6 +98,7 @@ section.bio {
 		background:url(../../images/ghost-studios.jpg);
 		background-size:cover;
 		background-position:center;
+		background-attachment:fixed;
 		.column.full {
 			height:100%;
 			background:rgba(0,0,0,0.5);

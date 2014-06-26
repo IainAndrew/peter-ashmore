@@ -76,3 +76,13 @@ header {
 		}
 	}
 }
+
+.no-js {
+	header {
+		.header-text {
+			.column.full {
+				margin:0;
+			}
+		}
+	}
+}

@@ -10,7 +10,7 @@ $(window).load(function() {
 			$ashmore = $peter.next(),
 			$audio = $ashmore.next();
 
-		$peter.delay(800).animate({marginTop:0}, {duration:1000});
+		$peter.delay(500).animate({marginTop:0}, {duration:1000});
 		$ashmore.stop().animate({marginTop:0}, {duration:1000});
 		$audio.stop().animate({marginTop:0}, {duration:500});
 

@@ -2,13 +2,15 @@ footer {
 	.clearfix {
 		background:white;
 		.column.full {
-			padding:3rem 1rem 3rem 1rem;
-			p {
-				color:#405180;
-				margin:0;
-				font-family:'mtt_milanoregular';
-				&:nth-child(2) {
-					float:right;
+			padding:3rem 2rem 3rem 2rem;
+			.column.half {
+				p {
+					color:#405180;
+					margin:1rem 0;
+					font-family:'mtt_milanoregular';
+				}
+				a {
+					text-decoration: underline;
 				}
 			}
 		}

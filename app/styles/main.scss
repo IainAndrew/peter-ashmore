@@ -63,8 +63,16 @@ body.loading {
 			width:6rem;
 			border-radius:50%;
 			background:#0A151A;
-			top:1.5rem;
-			left:1.5rem;
+			top:1.6rem;
+			left:1.6rem;
+		}
+	}
+}
+.no-js {
+	body.loading {
+		overflow:auto;
+		.loading-animation {
+			display:none;
 		}
 	}
 }
