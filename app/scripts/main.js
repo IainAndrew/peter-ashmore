@@ -3,15 +3,27 @@
 
 $(window).load(function() {
 	$('body').removeClass('loading'); // Hide loading animation on page load
+
+	$(function() {
+
+		var $peter = $('header .header-text .column.full').first(),
+			$ashmore = $peter.next(),
+			$audio = $ashmore.next();
+
+		$peter.delay(800).animate({marginTop:0}, {duration:1000});
+		$ashmore.stop().animate({marginTop:0}, {duration:1000});
+		$audio.stop().animate({marginTop:0}, {duration:500});
+
+	});
 });
 
 // Tape machine scroll effect
 $(window).scroll(function(){
 	var $st = $(this).scrollTop(),
 		rotate = 'rotate(' + $st + 'deg)',
-		$leftReel = $('.tm-reel-left'),
-		$rightReel = $('.tm-reel-right'),
-		$meters = $('.tm-meters');
+		$leftReel = $('section.bio .tape-machine-wrap .tm-reel-left'),
+		$rightReel = $('section.bio .tape-machine-wrap .tm-reel-right'),
+		$meters = $('section.bio .tape-machine-wrap .tm-meters');
 
 	$leftReel.css({transform : rotate});
 	$rightReel.css({transform : rotate});
@@ -65,16 +77,4 @@ $('a:not(nav > a)').click(function(){
 		scrollTop: $( $.attr(this, 'href') ).offset().top
 	}, 1000);
 	return false;
-});
-
-$(document).ready(function() {
-
-	$(function() {
-
-		var $peter = $('header .header-text .column.full').first(),
-			$ashmore = $peter.next(),
-			$audio = $ashmore.next(),
-			$photo = $('header .header-photo');
-	});
-
 });

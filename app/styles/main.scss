@@ -44,7 +44,27 @@ body.loading {
     height:100%;
     width:100%;
     background:white;
-    background-image:url(http://i.stack.imgur.com/FhHRx.gif);
-    background-position:50% 50%;
-    background-repeat:no-repeat;
+    .tape-machine-wrap {
+		position:relative;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		height:10rem;
+		width:10rem;
+		.tape-machine {
+			position:absolute;
+		}
+		.tm-reel-left {
+			left:0.8rem;
+			top:0.8rem;
+		}
+		.tm-tape-left {
+			height:6rem;
+			width:6rem;
+			border-radius:50%;
+			background:#0A151A;
+			top:1.5rem;
+			left:1.5rem;
+		}
+	}
 }
