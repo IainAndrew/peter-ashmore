@@ -51,5 +51,13 @@
 		hr.section-hr {
 			width:20%;
 		}
+		.block-orphan-img, .block-ghost-img {
+			.column.full {
+				padding:8rem 1rem 8rem 1rem;
+				p {
+					font-size:1.6em;
+				}
+			}
+		}
 	}
 }
