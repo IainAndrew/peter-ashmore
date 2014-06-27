@@ -11,6 +11,26 @@ footer {
 				}
 				a {
 					text-decoration: underline;
+					transition: all 0.2s;
+				}
+			}
+		}
+	}
+}
+
+.no-touch {
+	footer {
+		.clearfix {
+			.column.full {
+				.column.half {
+					&:nth-child(2) {
+						a {
+							&:hover {
+								text-decoration:none;
+								color:grey;
+							}
+						}
+					}
 				}
 			}
 		}
