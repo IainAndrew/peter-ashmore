@@ -1,3 +1,5 @@
+@import "variables";
+
 .v-align:after {
     display: inline-block;
     height: 100%;
@@ -15,11 +17,11 @@
 }
 .label {
 	width:100%;
-	background:#56a9d8;
+	background:$primary-color;
 	color:white;
 	text-transform:uppercase;
 	text-align:center;
-    font-family:'mtt_milanoregular';
+    font-family:$primary-font-reg;
     h2 {
         margin-top:0.5rem;
         margin-bottom:0.5rem;
@@ -28,12 +30,12 @@
 .section-header {
     padding-top:4rem;
     i {
-        color:#FF775C;
+        color:$secondary-color;
         font-size:1.6em;
     }
     h2 {
         text-transform:uppercase;
-        font-family:'mtt_milanobold';
+        font-family:$primary-font-bold;
     }
     hr {
             width:4rem;
@@ -41,6 +43,6 @@
     }
 }
 hr.section-hr {
-    border:1px solid #FF775C;
+    border:1px solid $secondary-color;
     width:50%;
 }

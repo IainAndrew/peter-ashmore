@@ -1,3 +1,5 @@
+@import "variables";
+
 section.samples {
 	#toneden {
 		padding-top:4rem;
@@ -7,16 +9,16 @@ section.samples {
 		}
 		.track-info-name {
 			font-size:1.8em;
-			font-family:'mtt_milanoregular';
+			font-family:$primary-font-reg;
 			&:hover {
-				color:#405180;
+				color:$tertiary-color;
 			}
 		}
 		.playlist {
 			max-height:none;
 			overflow-y:auto;
 			.playing {
-				color:#405180;
+				color:$tertiary-color;
 			}
 		}
 		.cover {

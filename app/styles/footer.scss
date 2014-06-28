@@ -1,3 +1,5 @@
+@import "variables";
+
 footer {
 	.clearfix {
 		background:white;
@@ -5,9 +7,9 @@ footer {
 			padding:3rem 2rem 3rem 2rem;
 			.column.half {
 				p {
-					color:#405180;
+					color:$tertiary-color;
 					margin:1rem 0;
-					font-family:'mtt_milanoregular';
+					font-family:$primary-font-reg;
 				}
 				a {
 					text-decoration: underline;

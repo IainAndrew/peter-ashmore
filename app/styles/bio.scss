@@ -1,10 +1,12 @@
+@import "variables";
+
 section.bio {
-	font-family:'mtt_milanoregular';
+	font-family:$primary-font-reg;
 	.bio-intro {
 		padding:5rem 2rem 4rem 2rem;
 		p {
 			font-size:1.2em;
-			color:#405180;
+			color:$tertiary-color;
 			margin:4rem auto;
 			text-align:center;
 			//border:2px solid lightgrey;

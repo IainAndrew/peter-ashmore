@@ -1,3 +1,5 @@
+@import "variables";
+
 section.success {
 	position:absolute;
 	width:100%;
@@ -6,17 +8,17 @@ section.success {
 	transform:translate(-50%, -50%);
 	p {
 		font-size:2em;
-		font-family:'mtt_milanoregular';
-		color:#FF775C;
+		font-family:$primary-font-reg;
+		color:$secondary-color;
 	}
 	button {
 		width:10rem;
 		height:5rem;
 		background:white;
-		border:2px solid #56a9d8;
-		color: #56a9d8;
+		border:2px solid $primary-color;
+		color: $primary-color;
 		text-transform:uppercase;
-		font-family:'mtt_milanobold';
+		font-family:$primary-font-bold;
 		transition: all 0.2s;
 		&:active {
 			outline:none;
@@ -28,7 +30,7 @@ section.success {
 	section.success {
 		button {
 			&:hover {
-				background:#FF775C;
+				background:$secondary-color;
 				border:0;
 				color:white;
 			}

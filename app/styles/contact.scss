@@ -1,5 +1,7 @@
+@import "variables";
+
 section.contact {
-	background:#56a9d8;
+	background:$primary-color;
 	.section-header {
 		h2 {
 			color:white;
@@ -18,7 +20,7 @@ section.contact {
 			display: block;
 			width: 100%;
 			margin-top: 1em;
-			font-family: 'mtt_milanoregular';
+			font-family: $primary-font-reg;
 			box-shadow: 0 1px 1px rgba(0,0,0,0.5);
 			resize: none;
 			&:focus {
@@ -49,7 +51,7 @@ section.contact {
 				text-transform:uppercase;
 				//letter-spacing:1px;
 				line-height:1em;
-				font-family:'mtt_milanobold';
+				font-family:$primary-font-bold;
 			}
 			input, textarea {
 				border:0; outline:0;
@@ -57,7 +59,7 @@ section.contact {
 				display: block;
 				width: 100%;
 				//margin-top: 1em;
-				font-family: 'mtt_milanoregular';
+				font-family: $primary-font-reg;
 				box-shadow: 0 1px 1px rgba(0,0,0,0.5);
 				resize: none;
 				&:focus {
@@ -74,14 +76,14 @@ section.contact {
 				text-align:center;
 				clear:both;
 				input.contact-form-submit {
-					color:#FF775C;
+					color:$secondary-color;
 					font-size:1.4em;
 					text-transform:uppercase;
 					width:10rem;
 					height:5rem;
 					//line-height:4rem;
 					//vertical-align:middle;
-					border:2px solid #FF775C;
+					border:2px solid $secondary-color;
 					background:white;
 					cursor:pointer;
 					cursor:hand;
@@ -166,7 +168,7 @@ section.contact {
 						position:absolute;
 						background:rgba(255, 119, 92, 0.8);
 						color:white;
-						font-family:'mtt_milanoregular';
+						font-family:$primary-font-reg;
 						font-size:1.5em;
 						top:0;
 						width:100%;
@@ -201,7 +203,7 @@ section.contact {
 		.form {
 			input.contact-form-submit {
 				&:hover {
-					background:#FF775C;
+					background:$secondary-color;
 					border-color:white;
 					color:white;
 				}
@@ -210,7 +212,7 @@ section.contact {
 		.social {
 			i {
 				&:hover {
-					color:#FF775C;
+					color:$secondary-color;
 				}
 			}
 		}

@@ -1,11 +1,13 @@
+@import "variables";
+
 header {
 	position:relative;
 	//padding:4rem 0 6rem 0;
 	//height:100vh;
-	//background:#56a9d8;
-	background:#56a9d8;
+	//background:$primary-color;
+	background:$primary-color;
 	/*.header-bg {
-		background:#56a9d8;
+		background:$primary-color;
 		height:26rem;
 		position:absolute;
 		width:100%;
@@ -16,7 +18,7 @@ header {
 	}*/
 	.header-text {
 		width:100%;
-		font-family:'ars_maquette_problack';
+		font-family:$header-font;
 		text-transform:uppercase;
 		color:white;
 		text-align:center;
@@ -40,7 +42,7 @@ header {
 			}
 			&:nth-child(3) {
 				font-size:0.83em;
-				font-family:'mtt_milanobold';
+				font-family:$primary-font-bold;
 				color:#306177;
 				margin-top:-100%;
 			}
