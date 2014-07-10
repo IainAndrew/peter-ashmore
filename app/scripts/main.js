@@ -72,7 +72,7 @@ $(function() {
 });
 
 // Anchor smooth scrolling
-$('a:not(nav > a)').click(function(){
+$('nav > ul > a').add($('header > a')).click(function(){
 	$('html, body').animate({
 		scrollTop: $( $.attr(this, 'href') ).offset().top
 	}, 1000);
