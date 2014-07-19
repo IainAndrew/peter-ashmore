@@ -19,14 +19,14 @@
         <!-- build:css styles/vendor.css -->
         <link rel="stylesheet" href="styles/simplespin.min.css">
         <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css">
+        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
     </head>
@@ -97,11 +97,11 @@
                 <div class="column half">
                     <div class="tape-machine-wrap">
                         <div class="tape-machine tm-meters"></div>
-                        <img class="tape-machine tm-body" src="images/tape-machine-body.svg" alt="">
+                        <img class="tape-machine tm-body" src="images/tape-machine-body.svg" alt="Tape machine body">
                         <div class="tape-machine tm-tape-left"></div>
                         <div class="tape-machine tm-tape-right"></div>
-                        <img class="tape-machine tm-reel-left" src="images/tape-machine-reel-left.svg" alt="">
-                        <img class="tape-machine tm-reel-right" src="images/tape-machine-reel-right.svg" alt="">
+                        <img class="tape-machine tm-reel-left" src="images/tape-machine-reel-left.svg" alt="Tape machine left reel">
+                        <img class="tape-machine tm-reel-right" src="images/tape-machine-reel-right.svg" alt="Tape machine right reel">
                     </div>
                 </div>
             </div>
@@ -215,10 +215,10 @@
 
             <div class="clearfix social">
                 <div class="column full text-center">
-                    <a href="http://www.facebook.com/peter.ashmore.501" target="_blank">
+                    <a href="//www.facebook.com/peter.ashmore.501" target="_blank">
                         <i class="icon-facebook-circled"></i>
                     </a>
-                    <a href="http://twitter.com/Peter_Ashmore" target="_blank">
+                    <a href="//twitter.com/Peter_Ashmore" target="_blank">
                         <i class="icon-twitter-circled"></i>
                     </a>
                 </div>
@@ -252,7 +252,7 @@
             
             <div class="tape-machine-wrap">
                 <div class="tape-machine tm-tape-left"></div>
-                <img class="tape-machine tm-reel-left spin-1s spin-ease" src="images/tape-machine-reel-left.svg" alt="">
+                <img class="tape-machine tm-reel-left spin-1s spin-ease" src="images/tape-machine-reel-left.svg" alt="Tape machine loading reel">
             </div>
 
         </div>
@@ -261,8 +261,8 @@
         <!-- build:js scripts/vendor.js -->
         <script type="text/javascript" src="scripts/instafeed.min.js"></script>
         <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <script src="../bower_components/skrollr/dist/skrollr.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/skrollr/dist/skrollr.min.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -275,7 +275,7 @@
                 
                 script.type = "text/javascript";
                 script.async = true;
-                script.src = "//sd.toneden.io/production/toneden.loader.js"
+                script.src = "https://sd.toneden.io/production/toneden.loader.js"
                 
                 var entry = document.getElementsByTagName("script")[0];
                 entry.parentNode.insertBefore(script, entry);
@@ -310,7 +310,7 @@
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
+            e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
