@@ -76,6 +76,11 @@ section.bio {
 	.bio-text {
 		padding:3rem 2rem 3rem 2rem;
 		font-size:1.1em;
+		ul {
+			li {
+				font-size:1em;
+			}
+		}
 	}
 	.block-orphan-img {
 		//height:30rem;
