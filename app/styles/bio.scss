@@ -84,10 +84,10 @@ section.bio {
 	}
 	.block-orphan-img {
 		//height:30rem;
-		background:url(../images/orphan-studios.jpg);
+		background:url(../images/orphan-studios.jpg) no-repeat center center fixed;;
 		background-size:cover;
-		background-position:center;
-		background-attachment:fixed;
+		height: 100%;
+  		overflow: hidden;
 		.column.full {
 			height:100%;
 			background:rgba(0,0,0,0.6);
@@ -102,10 +102,10 @@ section.bio {
 	}
 	.block-ghost-img {
 		//height:20rem;
-		background:url(../images/ghost-studios.jpg);
+		background:url(../images/ghost-studios.jpg) no-repeat center center fixed;;
 		background-size:cover;
-		background-position:center;
-		background-attachment:fixed;
+		height: 100%;
+  		overflow: hidden;
 		.column.full {
 			height:100%;
 			background:rgba(0,0,0,0.5);
