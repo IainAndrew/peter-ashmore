@@ -78,3 +78,15 @@ $('nav > ul > a').add($('header > a')).click(function(){
 	}, 1000);
 	return false;
 });
+
+var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+
+if (iOS === true) {
+	var $orphan = $('.block-orphan-img'),
+		$ghost = $('.block-ghost-img'),
+		$peter = $('.header-photo');
+
+	$orphan.add($ghost).add($peter).css({
+		'background-attachment':'scroll',
+	});
+}
