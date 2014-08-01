@@ -85,6 +85,7 @@ section.bio {
 	.block-orphan-img {
 		//height:30rem;
 		background:url(../images/orphan-studios.jpg) no-repeat center center;
+		background-size:contain;
 		-webkit-background-size:cover;
 		background-size:cover;
 		background-attachment:scroll;
@@ -106,6 +107,7 @@ section.bio {
 	.block-ghost-img {
 		//height:20rem;
 		background:url(../images/ghost-studios.jpg) no-repeat center center;
+		background-size:contain;
 		-webkit-background-size:cover;
 		background-size:cover;
 		background-attachment:scroll;
