@@ -18,21 +18,23 @@ $(window).load(function() {
 });
 
 // Tape machine scroll effect
-$(window).scroll(function(){
-	var $st = $(this).scrollTop(),
-		rotate = 'rotate(' + $st + 'deg)',
-		$leftReel = $('section.bio .tape-machine-wrap .tm-reel-left'),
-		$rightReel = $('section.bio .tape-machine-wrap .tm-reel-right'),
-		$meters = $('section.bio .tape-machine-wrap .tm-meters');
+if ( !Modernizr.touch ) {
+	$(window).scroll(function(){
+		var $st = $(this).scrollTop(),
+			rotate = 'rotate(' + $st + 'deg)',
+			$leftReel = $('section.bio .tape-machine-wrap .tm-reel-left'),
+			$rightReel = $('section.bio .tape-machine-wrap .tm-reel-right'),
+			$meters = $('section.bio .tape-machine-wrap .tm-meters');
 
-	$leftReel.css({transform : rotate});
-	$rightReel.css({transform : rotate});
-	$meters.addClass('tm-meters-light');
-	clearTimeout($.data(this, 'scrollTimer'));
-	$.data(this, 'scrollTimer', setTimeout(function() {
-		$meters.removeClass('tm-meters-light');
-	}, 200));
-});
+		$leftReel.css({transform : rotate});
+		$rightReel.css({transform : rotate});
+		$meters.addClass('tm-meters-light');
+		clearTimeout($.data(this, 'scrollTimer'));
+		$.data(this, 'scrollTimer', setTimeout(function() {
+			$meters.removeClass('tm-meters-light');
+		}, 200));
+	});
+}
 
 // Navbar functionality
 $(function() {
