@@ -34,17 +34,28 @@ header {
 			&:first-of-type {
 				font-size:2.1em;
 				text-shadow: 0 -1px 0px rgba(grey, 0.6), 0 -2px 0px rgba(grey, 0.8);
+				top:-20rem;
+				position:relative;
+				transition:top 1.7s cubic-bezier(.87,-0.41,.2,1.28);
 			}
 			&:nth-of-type(2) {
 				font-size:1.37em;
 				margin-bottom:-0.15em;
 				text-shadow: 0 -1px 0px rgba(grey, 0.6), 0 -2px 0px rgba(grey, 0.8);
-				
+				top:-20rem;
+				position:relative;
+				transition:top 1s cubic-bezier(.87,-0.41,.2,1.28);
 			}
 			&:nth-of-type(3) {
 				font-size:0.83em;
 				font-family:$primary-font-bold;
 				color:#306177;
+				top:-20rem;
+				position:relative;
+				transition:top 0.5s cubic-bezier(.87,-0.41,.2,1.28);
+			}
+			&.header-drop {
+				top:0;
 			}
 		}
 	}

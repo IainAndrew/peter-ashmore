@@ -6,13 +6,9 @@ $(window).load(function() {
 
 	$(function() {
 
-		var $peter = $('header .header-text .column.full').first(),
-			$ashmore = $peter.next(),
-			$audio = $ashmore.next();
+		var $header = $('header .header-text h1 span');
 
-		$peter.delay(500).animate({marginTop:0}, {duration:1000});
-		$ashmore.stop().animate({marginTop:0}, {duration:1000});
-		$audio.stop().animate({marginTop:0}, {duration:500});
+		$header.addClass('header-drop');
 
 	});
 });
