@@ -24,27 +24,27 @@ header {
 		text-align:center;
 		padding:5rem 0 9rem 0;
 		h1 {
+			margin:0;
+		}
+		span {
 			margin-top:0;
 			margin-bottom:-0.3em;
 			font-weight:normal;
-		}
-		.column.full {
-			&:first-child {
+			display:block;
+			&:first-of-type {
 				font-size:2.1em;
 				text-shadow: 0 -1px 0px rgba(grey, 0.6), 0 -2px 0px rgba(grey, 0.8);
-				margin-top:-100%;
 			}
-			&:nth-child(2) {
+			&:nth-of-type(2) {
 				font-size:1.37em;
-				margin-bottom:0.3em;
+				margin-bottom:-0.15em;
 				text-shadow: 0 -1px 0px rgba(grey, 0.6), 0 -2px 0px rgba(grey, 0.8);
-				margin-top:-100%;
+				
 			}
-			&:nth-child(3) {
+			&:nth-of-type(3) {
 				font-size:0.83em;
 				font-family:$primary-font-bold;
 				color:#306177;
-				margin-top:-100%;
 			}
 		}
 	}
