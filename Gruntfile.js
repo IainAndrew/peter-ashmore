@@ -349,6 +349,22 @@ module.exports = function (grunt) {
             }
         },
 
+        buildcontrol: {
+          options: {
+            dir: 'dist',
+            commit: true,
+            connectCommits:false,
+            push: true,
+            message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+          },
+          pages: {
+            options: {
+              remote: 'git@github.com:IainAndrew/peter-ashmore.git',
+              branch: 'gh-pages'
+            }
+          }
+        },
+
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
@@ -415,6 +431,10 @@ module.exports = function (grunt) {
         'rev',
         'usemin',
         'htmlmin'
+    ]);
+
+    grunt.registerTask('deploy', [
+      'buildcontrol:pages'
     ]);
 
     grunt.registerTask('default', [
