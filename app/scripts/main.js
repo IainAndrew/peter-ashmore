@@ -37,7 +37,7 @@ $(function() {
 	var $toggle = $('#nav-toggle'),
 		$menu = $('nav ul'),
 		$icon = $('#nav-toggle i'),
-		$menuItem = $('nav ul a');
+		$menuItem = $('nav ul li a');
 		var $width = $(window).width();
 		
 	$toggle.click(function(e) {
@@ -70,7 +70,7 @@ $(function() {
 });
 
 // Anchor smooth scrolling
-$('nav > ul > a').add($('header > a')).click(function(){
+$('nav > ul > li > a').add($('header > a')).click(function(){
 	$('html, body').animate({
 		scrollTop: $( $.attr(this, 'href') ).offset().top
 	}, 1000);

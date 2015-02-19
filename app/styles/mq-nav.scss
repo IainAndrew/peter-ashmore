@@ -4,14 +4,12 @@
 		width:auto;
 		position:absolute;
 		ul {
-			a {
-				li {
-					box-shadow:2px 2px 0 0 #56a9d8;
-					padding-left:0;
-					text-align:center;
-					span {
-						display:none;
-					}
+			li {
+				box-shadow:2px 2px 0 0 #56a9d8;
+				padding-left:0;
+				text-align:center;
+				span {
+					display:none;
 				}
 			}
 		}
@@ -25,12 +23,10 @@
 		width:100%;
 		ul {
 			display:none;
-			a {
-				li {
-					width:100%;
-					margin:0;
-					border-bottom:1px solid lightgrey;
-				}
+			li {
+				width:100%;
+				margin:0;
+				border-bottom:1px solid lightgrey;
 			}
 		}
 	}
